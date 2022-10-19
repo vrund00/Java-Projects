@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+	public static int count(String str, char a) {
+		
+		int count = 0;
+		
+		for (int i = 0; i < str.length(); i++) {
+			
+			if (a == str.charAt(i)) {
+				count++;
+			}
+			
+		}
+		return count;
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String user1;
+		String user2;
+		
+		char chr;
+		
+		System.out.print("Enter string: ");
+		user1 = input.nextLine();
+		
+		System.out.print("Enter character: ");
+		user2 = input.next();
+		
+		chr = user2.charAt(0);
+		
+		System.out.println("The number of times " + chr + " appears in the string " + user1 + " is " + count(user1, chr));
+		
+		
+	}
