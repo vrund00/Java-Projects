@@ -1,0 +1,36 @@
+
+	public static void main(String [] args) {
+		
+		int rank = 1 + (int) (Math.random() * (14-1));
+		int suit = 1 + (int) (Math.random() * (5-1));
+		
+		String newRank = "blank";
+		String newSuit = "blank";
+		
+		
+		switch(rank) {
+			case 1: newRank = "Ace"; break;
+			case 2: newRank = "2"; break;
+			case 3: newRank = "3"; break;
+			case 4: newRank = "4"; break;
+			case 5: newRank = "5"; break;
+			case 6: newRank = "6"; break;
+			case 7: newRank = "7"; break;
+			case 8: newRank = "8"; break;
+			case 9: newRank = "9"; break;
+			case 10: newRank = "10"; break;
+			case 11: newRank = "Jack"; break;
+			case 12: newRank = "Queen"; break;
+			case 13: newRank = "King";
+		
+		}
+		switch(suit) {
+			case 1: newSuit = "Clubs"; break;
+			case 2: newSuit = "Diamonds"; break;
+			case 3: newSuit = "Hearts"; break;
+			case 4: newSuit = "Spades"; break;
+		}
+		
+		System.out.println("The card you picked is " + newRank + " of " + newSuit);
+		
+	}
