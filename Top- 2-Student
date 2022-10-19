@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		int numStudents;
+		
+		String student1;
+		double score1;
+		String student2;
+		double score2;
+		
+		System.out.println("Enter the number of students: ");
+		numStudents = input.nextInt();
+		
+		System.out.println("Enter the student's name: ");
+		student1 = input.next();
+		
+		System.out.println("Enter the student's score: ");
+		score1 = input.nextDouble();
+		
+		System.out.println("Enter the student's name: ");
+		student2 = input.next();
+		
+		System.out.println("Enter the student's score: ");
+		score2 = input.nextDouble();
+		
+		if (score2 > score1) {
+			String tempName = student2;
+			Double tempScore = score2;
+			
+			student1 = student2;
+			score1 = score2;
+			
+			student2 = tempName;
+			score1 = tempScore;
+		}
+		for (int i = 0; i < numStudents - 2; i++) {
+			System.out.println("Enter the student's name: ");
+			String student3 = input.next();
+			
+			System.out.println("Enter the student's score: ");
+			Double score3 = input.nextDouble();
+			
+			if ((score3 > score1) && (score3 > score2)) {
+				String temp = student1;
+				double temp1 = score1;
+				
+				student1 = student3;
+				score1 = score3;
+			}
+			else if (score3 > score2) {
+				String temp = student2;
+				double temp1 = score2;
+				
+				score2 = score3;
+				student2 = student3;
+				
+				score3 = temp1;
+				student3 = temp;
+				
+			}
+			
+			
+		}
+		System.out.println("The student with the highest score was " + student1 + " with a score of " + score1);
+		System.out.println("The student with the second highest score was " + student2 + " with a score of " + score2);
+		
+		
+		input.close();
+		
+		
+		
+	}
