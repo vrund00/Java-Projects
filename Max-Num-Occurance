@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+	public static void main(String[]args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int max = 0;
+		int count = 1;
+		int num;
+		
+		System.out.println("Enter numbers: ");
+		
+		num = input.nextInt();
+		max = num;
+		
+		while (num != 0) {
+			
+			if (num == max) {
+				count++;
+			}
+			if (num > max) {
+				max = num;
+				count = 1;
+			}
+			num = input.nextInt();
+		}
+		System.out.println("The largest number is " + max);
+		System.out.println("The occurance count of the largest number is " + count);
+		
