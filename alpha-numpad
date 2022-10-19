@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String user;
+		
+		System.out.println("Enter a letter: ");
+		
+		user = input.next();
+		
+		char user1 = user.charAt(0);
+	
+		
+		if ((user1 == 'a') || (user1 == 'A') || (user1 == 'b') || (user1 == 'B') || (user1 == 'c') || (user1 == 'C')) {
+			
+			System.out.println("The corresponding number is 2");
+		}
+		else if ((user1 == 'd') || (user1 == 'D') || (user1 == 'e') || (user1 == 'E') || (user1 == 'f') || (user1 == 'F')) {
+			System.out.println("The corresponding number is 3");
+	}
+		else if ((user1 == 'g') || (user1 == 'G') || (user1 == 'h') || (user1 == 'H') || (user1 == 'i') || (user1 == 'I')) {
+			System.out.println("The corresponding number is 4");
+		}
+		else if ((user1 == 'j') || (user1 == 'J') || (user1 == 'k') || (user1 == 'K') || (user1 == 'l') || (user1 == 'L')) {
+			System.out.println("The corresponding number is 5");
+		}
+		else if ((user1 == 'm') || (user1 == 'M') || (user1 == 'n') || (user1 == 'N') || (user1 == 'o') || (user1 == 'O')) {
+			System.out.println("The corresponding number is 6");
+		}
+		else if ((user1 == 'p') || (user1 == 'P') || (user1 == 'q') || (user1 == 'Q') || (user1 == 'r') || (user1 == 'R') || 
+				(user1 == 's') || (user1 == 'S')) {
+			System.out.println("The corresponding number is 7");
+		}
+		else if ((user1 == 't') || (user1 == 'T') || (user1 == 'u') || (user1 == 'U') || (user1 == 'v') || (user1 == 'V')) {
+			System.out.println("The corresponding number is 8");
+		}
+		else if ((user1 == 'w') || (user1 == 'W') || (user1 == 'x') || (user1 == 'X') || (user1 == 'y') || (user1 == 'Y') || 
+				(user1 == 'z') || (user1 == 'Z')) {
+			System.out.println("The corresponding number is 9");
+		}
+		else {
+			System.out.println(user1 + " is an invalid input");
+			
+		}
+		
+		input.close();
+		
+
+
