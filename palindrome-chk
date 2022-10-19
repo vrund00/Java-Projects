@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class chapter3_Q12 {
+
 	
 	public static void main(String[] args ) {
 		
