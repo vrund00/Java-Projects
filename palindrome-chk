@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class chapter3_Q12 {
+	
+	public static void main(String[] args ) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int num;
+		
+		int initial;
+		
+		int left;
+		
+		int middle;
+		
+		
+		int right;
+		
+		System.out.println("Enter a three-digit integer: ");
+		
+		num = input.nextInt();
+		
+		initial = num;
+		
+		
+		left = num / 100;
+		
+		num = num % 100;
+		
+		middle = num/ 10;
+		
+		num = num % 10;
+		
+		right = num;
+		
+		if (left == right) {
+			System.out.println(initial + " is a palindrome");
+		}
+		else {
+			System.out.println(initial + " is not a palindrome");
+		}
+		input.close();
+		
+	}
