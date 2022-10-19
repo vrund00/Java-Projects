@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String user;
+		
+		char userInput;
+		
+		int check;
+		
+		System.out.println("Enter a letter: ");
+		
+		user = input.next();
+		
+		userInput = user.charAt(0);
+		
+		check = (int)userInput;
+		
+		int lowerA = (int)'a';
+		int lowerE = (int)'e';
+		int lowerI = (int)'i';
+		int lowerO = (int)'o';
+		int lowerU = (int)'u';
+		
+		int upperA = (int)'A';
+		int upperE = (int)'E';
+		int upperI = (int)'I';
+		int upperO = (int)'O';
+		int upperU = (int)'U';
+		
+		if (check < 65) {
+			System.out.println(userInput + " is an invalid input");
+		}
+		else if ((check == lowerA) || (check == lowerE) || (check == lowerI) || (check == lowerO) || (check == lowerU)) {
+			System.out.println(userInput + " is a vowel");
+		}
+		else if ((check == upperA) || (check == upperE) || (check == upperI) || (check == upperO) || (check == upperU)) {
+			System.out.println(userInput + " is a vowel");
+		}
+		else {
+			System.out.println(userInput + " is a consonant");
+		}
+		
+		input.close();
+		
+	}
