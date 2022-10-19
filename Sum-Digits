@@ -1,0 +1,30 @@
+import java.util.Scanner;
+	
+	public static int sumDigits(long n) {
+		
+		long num = n;
+		
+		int sum = 0;
+		
+		while (num != 0) {
+			sum += (num % 10);
+			num /= 10;
+		}
+		return sum;
+		
+		
+	}
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		long user;
+		
+		System.out.println("Enter a series of numbers to sum: ");
+		user = input.nextLong();
+		
+		System.out.println(sumDigits(user));
+		
+		
+		
+	}
