@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+
+	public static void main(String [] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter three numbers: ");
+		double user1 = input.nextDouble();
+		double user2 = input.nextDouble();
+		double user3 = input.nextDouble();
+		
+		displaySortedNumbers(user1, user2, user3);
+		
+	}
+
+	public static void displaySortedNumbers(double num1, double num2, double num3) {
+		double t;
+		
+		if (num2 < num1 && num2 < num3){
+			t = num1;
+			num1 = num2;
+			num2 = t;
+		}
+		else if (num3 < num1 && num3 < num2) {
+			t = num1; 
+			num1 = num3;
+			num3 = t;
+		}
+		if (num3 < num2) {
+			t = num2;
+			num2 = num3;
+			num3 = t;
+		}
+		
+		System.out.println(num1 + " " + num2 + " " + num3);
+		
+	}
